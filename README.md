@@ -24,5 +24,15 @@ BONUS 2:
 Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.  
 
 ## SVOLGIMENTO ##
-1. Creare l'arrey di oggetti con le informazioni date.
-2. 
+### Milestone 0 ###
+1. Creare l'array di oggetti con le informazioni date.
+### Milestone 1 ###
+2. Creare un ciclo for con all'interno un ciclo for un ciclo for...in per permettermi di vedere la chiave e il valore associato;
+### Milestone 2 ###
+3. Creare nel DOM i tag h2 h3 e collegarli in JS tramite querySelector e innerHTML.
+
+### Bonus 1 ###
+4. Andare ad inserire la stringa della foto nel src dell'img.
+
+### Bonus 2 ###
+5. Andare a modificare il codice js relativo alle informazioni in modo tale da poter usufruire di Bootstrap così da poter creare delle card con foto nome e ruolo e collegare il file style.css 
