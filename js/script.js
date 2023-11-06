@@ -44,9 +44,9 @@ for (let i = 0; i < teamList.length; i++) {
     }
 
     curMember += `      
+                    <img src="img/${curMemberElem.photo}" alt="">
                     <h2>${curMemberElem.name}</h2>
                     <h3>${curMemberElem.role}</h3>
-                    <h3 class="mb-3">${curMemberElem.photo}</h3>
                 `
 };
 
