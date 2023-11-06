@@ -30,4 +30,12 @@ const teamList = [
         role : "Graphic Designer",
         photo : "barbara-ramos-graphic-designer.jpg"
     }
-]
+];
+
+for (let i = 0; i < teamList.length; i++) {
+    const curMember = teamList[i];
+
+    for (let key in curMember) {
+    console.log(key, curMember[key]);
+  }
+};
