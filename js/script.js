@@ -32,10 +32,22 @@ const teamList = [
     }
 ];
 
-for (let i = 0; i < teamList.length; i++) {
-    const curMember = teamList[i];
+//COSTANTI
+const rowElem = document.querySelector(".row")
+let curMember = "";
 
-    for (let key in curMember) {
-    console.log(key, curMember[key]);
-  }
+for (let i = 0; i < teamList.length; i++) {
+    let curMemberElem = teamList[i];
+
+    for (let key in curMemberElem) {
+    console.log(key, curMemberElem[key]);
+    }
+
+    curMember += `      
+                    <h2>${curMemberElem.name}</h2>
+                    <h3>${curMemberElem.role}</h3>
+                    <h3 class="mb-3">${curMemberElem.photo}</h3>
+                `
 };
+
+rowElem.innerHTML = curMember;
