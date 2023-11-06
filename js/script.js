@@ -33,7 +33,7 @@ const teamList = [
 ];
 
 //COSTANTI
-const rowElem = document.querySelector(".row")
+const gridElem = document.querySelector(".grid")
 let curMember = "";
 
 for (let i = 0; i < teamList.length; i++) {
@@ -43,11 +43,15 @@ for (let i = 0; i < teamList.length; i++) {
     console.log(key, curMemberElem[key]);
     }
 
-    curMember += `      
-                    <img src="img/${curMemberElem.photo}" alt="">
-                    <h2>${curMemberElem.name}</h2>
-                    <h3>${curMemberElem.role}</h3>
+    curMember += `
+                    <div class="card my-3">
+                        <img src="img/${curMemberElem.photo}" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title">${curMemberElem.name}</h5>
+                            <p class="card-text">${curMemberElem.role}</p>
+                        </div>
+                    </div>
                 `
 };
 
-rowElem.innerHTML = curMember;
+gridElem.innerHTML = curMember;
